@@ -1,12 +1,13 @@
 [
   {
-  "modid": "lastserver",
-  "name": "Last Server Joiner",
-  "description": "Mod that allows to join last server from main menu.",
-  "version": "0.1",
-  "authorList": ["BONNe1704"],
-  "screenshots": [],
-  "dependencies": ["1.12-14.21.0.2331"],
-  "mcversion": "1.12"
+    "modid": "lastserver",
+    "name": "Last Server Joiner",
+    "description": "Mod that allows to join last server from main menu.",
+    "version": "0.2",
+    "authorList": ["BONNe1704"],
+    "screenshots": [],
+    "dependencies": ["1.12-14.21.0.2331"],
+    "mcversion": "1.12",
+    "logofile": "logo.png"
   }
 ]
