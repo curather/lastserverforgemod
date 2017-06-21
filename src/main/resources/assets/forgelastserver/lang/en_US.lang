@@ -1,0 +1,23 @@
+# Button in menu. Possible variables:
+# 			%1$s - server name
+# 			%2$s - server ip
+# 			%3$s - server game version
+menu.joinButton=Join: %1$s
+
+# Reconnect Button in disconnected gui.
+gui.reconnect=Reconnect
+
+# Checkbox text while not active in disconnected gui.
+gui.autoReconnect=Auto Reconnect
+
+# Checkbox text while counting seconds in disconnected gui. %1$s - seconds.
+gui.connecting=Connecting after %1$s seconds
+
+# Configuration GUI title.
+config.gui.title=Change Last Server Mod settings.
+
+# Configuration GUI comment on seconds variable.
+config.gui.comment.seconds=Seconds between trying to reconnect to server. Default 5.
+
+# Configuration GUI comment on auto reconnect variable.
+config.gui.comment.autoreconnect=Auto Reconnect checkbox value on startup. Default false.
