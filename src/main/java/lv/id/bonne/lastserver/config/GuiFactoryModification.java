@@ -1,8 +1,10 @@
-//
-// Armands  20.06.2017
-// ForgeLastServer
-//
-
+/*******************************************************************************
+ * Last Server Joiner 2017.
+ * Minecraft Forge Client Modification.
+ *
+ * Made by BONNe1704
+ * Under Common Development and Distribution License (CDDL)
+ ******************************************************************************/
 
 package lv.id.bonne.lastserver.config;
 
