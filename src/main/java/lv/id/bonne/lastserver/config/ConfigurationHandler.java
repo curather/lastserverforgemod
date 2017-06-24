@@ -153,6 +153,13 @@ public class ConfigurationHandler
 	 */
 	public static void storeSaverData(ServerData newServer)
 	{
+		// SinglePlayer games ServerData object is null. Fix null pointer issue.
+
+		if (newServer == null)
+		{
+			return;
+		}
+
 		ConfigurationHandler.configuration.load();
 
 		ConfigCategory category;
