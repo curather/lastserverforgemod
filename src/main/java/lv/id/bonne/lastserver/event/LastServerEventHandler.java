@@ -62,9 +62,9 @@ public class LastServerEventHandler
 	{
 		this.isInsideDisconnectedGui = false;
 
-		if (event.getGui() instanceof GuiMainMenu)
+		if (event.gui instanceof GuiMainMenu)
 		{
-			List<GuiButton> buttonList = event.getButtonList();
+			List<GuiButton> buttonList = event.buttonList;
 
 			GuiButton multilayerButton = null;
 			int index = 0;
@@ -105,11 +105,11 @@ public class LastServerEventHandler
 				buttonList.add(++index, this.joinLastServerButton);
 			}
 		}
-		else if (event.getGui() instanceof GuiDisconnected)
+		else if (event.gui instanceof GuiDisconnected)
 		{
 			this.isInsideDisconnectedGui = true;
 
-			List<GuiButton> buttonList = event.getButtonList();
+			List<GuiButton> buttonList = event.buttonList;
 
 			GuiButton backToServerList = null;
 			int index = 0;
@@ -167,7 +167,7 @@ public class LastServerEventHandler
 	@SubscribeEvent
 	public void onButtonPress(GuiScreenEvent.ActionPerformedEvent.Post event)
 	{
-		GuiButton button = event.getButton();
+		GuiButton button = event.button;
 
 		if (button == this.joinLastServerButton || button == this.reconnectServerButton)
 		{
@@ -292,14 +292,14 @@ public class LastServerEventHandler
 	private GuiButton initNewButton(GuiButton previousButton, String buttonName, int uniqueButtonID)
 	{
 		int width = previousButton.getButtonWidth() / 2 - LastServerEventHandler.WHITE_SPACE;
-		int x = previousButton.x + width + 2 * LastServerEventHandler.WHITE_SPACE;
+		int x = previousButton.xPosition + width + 2 * LastServerEventHandler.WHITE_SPACE;
 
 		previousButton.setWidth(width);
 
 		return new GuiButton(
 			uniqueButtonID,
 			x,
-			previousButton.y,
+			previousButton.yPosition,
 			width,
 			previousButton.height,
 			buttonName);
@@ -322,8 +322,8 @@ public class LastServerEventHandler
 
 		for (GuiButton button : buttonList)
 		{
-			minX = Math.min(button.x, minX);
-			maxY = Math.max(button.y, maxY);
+			minX = Math.min(button.xPosition, minX);
+			maxY = Math.max(button.yPosition, maxY);
 		}
 
 		int x = minX;

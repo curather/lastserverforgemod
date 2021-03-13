@@ -2,7 +2,7 @@
 # 			%1$s - server name
 # 			%2$s - server ip
 # 			%3$s - server game version
-menu.joinButton=Join: %1$s
+menu.joinButton= %2$s
 
 # Reconnect Button in disconnected gui.
 gui.reconnect=Reconnect

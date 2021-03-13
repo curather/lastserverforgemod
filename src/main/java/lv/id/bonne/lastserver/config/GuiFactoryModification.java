@@ -25,24 +25,16 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class GuiFactoryModification implements IModGuiFactory
 {
 	@Override
-	public void initialize(Minecraft minecraftInstance)
-	{
+	public void initialize(Minecraft mc) {
+		// Doesn't really have a use right now
 	}
-
 
 	@Override
-	public boolean hasConfigGui()
+	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories()
 	{
-		return true;
+		// Doesn't have a use right now
+		return null;
 	}
-
-
-	@Override
-	public GuiScreen createConfigGui(GuiScreen parentScreen)
-	{
-		return new GuiConfigModification(parentScreen);
-	}
-
 
 	@Override
 	public Class<? extends GuiScreen> mainConfigGuiClass()
@@ -50,17 +42,10 @@ public class GuiFactoryModification implements IModGuiFactory
 		return GuiConfigModification.class;
 	}
 
-
-	@Override
-	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories()
-	{
-		return null;
-	}
-
-
 	@Override
 	public RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element)
 	{
+		// Doesn't have a use right now
 		return null;
 	}
 }

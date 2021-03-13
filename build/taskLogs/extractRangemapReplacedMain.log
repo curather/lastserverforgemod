@@ -1,0 +1,8 @@
+Symbol range map extraction starting
+Processing 6 files
+processing lv\id\bonne\lastserver\Constants.java
+processing lv\id\bonne\lastserver\Main.java
+processing lv\id\bonne\lastserver\config\ConfigurationHandler.java
+processing lv\id\bonne\lastserver\config\GuiConfigModification.java
+processing lv\id\bonne\lastserver\config\GuiFactoryModification.java
+processing lv\id\bonne\lastserver\event\LastServerEventHandler.java

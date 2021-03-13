@@ -6,8 +6,8 @@
     "version": "0.3",
     "authorList": ["BONNe1704"],
     "screenshots": [],
-    "dependencies": ["1.12-14.21.0.2347"],
-    "mcversion": "1.12",
+    "dependencies": ["1.8.9-11.15.1.2318-1.8.9"],
+    "mcversion": "1.8.9",
     "logofile": "logo.png"
   }
 ]
